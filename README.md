@@ -10,7 +10,7 @@
 - USB C male to female 90° adapter 
 - 3D printer
   - Top parts and bottom parts are both printed in two pieces because of my printers size limitations
-  - Top parts are transparent PETG and bottom is black PLA
+  - Top parts and diffuser (for the leds) are transparent PETG and bottom is black PLA 
  
 I used https://github.com/Adrianotiger/Neopixel-Effect-Generator for creating some of the RGB effects,
 and this guide https://kevinboone.me/picoflash.html for storing data on the microcontroller
