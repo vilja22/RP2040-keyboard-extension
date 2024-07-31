@@ -1,6 +1,6 @@
-Keyboard extension I made for Wooting 60HE
+# Keyboard extension I made for Wooting 60HE
 
-Parts used
+## Parts used
 - RP2040 Microcontroller
 - 16 channel multiplexer
 - HLK-LD2410 presence sensor
@@ -9,7 +9,11 @@ Parts used
 - Rotatory encoder
 - USB C male to female 90° adapter 
 - 3D printer
-  - The keyboard is in two pieces because of size limitations of my printer
+  - Top parts and bottom parts are both printed in two pieces because of my printers size limitations
   - Top parts are transparent PETG and bottom is black PLA
  
-I used https://github.com/Adrianotiger/Neopixel-Effect-Generator for creating some of the RGB effects and this guide https://kevinboone.me/picoflash.html for storing data on the microcontroller
+I used https://github.com/Adrianotiger/Neopixel-Effect-Generator for creating some of the RGB effects,
+and this guide https://kevinboone.me/picoflash.html for storing data on the microcontroller
+
+
+![blue_and_pink](https://github.com/user-attachments/assets/41ff159a-ccc7-4f64-abee-1bcd23e35c56)
