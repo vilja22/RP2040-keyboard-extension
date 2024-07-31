@@ -12,4 +12,4 @@ Parts used
   - The keyboard is in two pieces because of size limitations of my printer
   - Top parts are transparent PETG and bottom is black PLA
  
-I used https://github.com/Adrianotiger/Neopixel-Effect-Generator for creating some of the RGB effects
+I used https://github.com/Adrianotiger/Neopixel-Effect-Generator for creating some of the RGB effects and this guide https://kevinboone.me/picoflash.html for storing data on the microcontroller
