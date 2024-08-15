@@ -1,5 +1,5 @@
 // **********************************************************************************
-// Author: Vilja Sepp‰nen https://github.com/vilja22
+// Author: Vilja Sepp√§nen https://github.com/vilja22
 // **********************************************************************************
 // License
 // **********************************************************************************
@@ -35,12 +35,10 @@
 #include <stdio.h>          // vsnprintf, sscanf, printf
 #include <stdlib.h>         // NULL, malloc, free, atoi
 #include <iostream>
-#include <iostream>
 #include <Windows.h>
 #include <mmdeviceapi.h>
 #include <endpointvolume.h>
 #include <string>
-#include <iostream>
 #include <iomanip>
 #include <sstream>
 #include <chrono>
@@ -63,14 +61,7 @@ static void glfw_error_callback(int error, const char* description)
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
 }
 // Show windows
-bool bShowShop = false;
-bool bShowInventory = false;
 bool bShowSettings = false;
-int settingtab;
-bool openSpecificTab = true;
-int lastsettingtab = 9;
-int selectedFunction = 0;
-int button = 0;
 ImVec2 miniscreen = {128, 128};
 bool bScreen = false;
 int activeKey = -1;
@@ -128,13 +119,9 @@ uint8_t currentKeysp2[] = { 24, 12, 13, 14, 15, 8 , 7, 10, 11, 25, 27, 29, 31, 3
 };
 
 bool connection;
-typedef uint64_t U64;
 HANDLE hComm;
-U64 pc;
-U64 device;
 uint16_t longestUpdate = 0;
 uint16_t avargeUpdate = 0;
-
 static char lastCharPressed = 0;
 
 void CharCallback(GLFWwindow* window, unsigned int codepoint) {
@@ -243,8 +230,6 @@ uint8_t sendDataCommand(uint8_t command) {
     return responseBuffer[0];
 }
 
-uint8_t errorCode[8] = { 1,1,2,3,5,8,12,21 };
-
 void readAndDecodeData() {
 
 
@@ -315,9 +300,6 @@ void readAndDecodeData() {
     }
 
 }
-
-
-
 
 void readData() {
     if (hasData) {
@@ -962,7 +944,6 @@ int main(int, char**)
         }
 
         // Main menu bar
-
         if (ImGui::BeginMainMenuBar())
         {
             if (ImGui::MenuItem("Open Settings    ", NULL, &bShowSettings)) {}
